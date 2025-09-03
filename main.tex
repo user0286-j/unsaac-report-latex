@@ -1,0 +1,133 @@
+\documentclass[12pt]{report}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage[most]{tcolorbox}
+
+\begin{document}
+
+\definecolor{primary}{RGB}{123,21,35}
+\definecolor{secundary}{RGB}{233,161,53}
+\definecolor{text}{RGB}{255,255,255}
+
+\newcommand{\Facultad}{\textcolor{text}{\Large FACULTAD DE INGENIERÍA ELÉCTRICA, ELECTRÓNICA, INFORMÁTICA Y MECÁNICA}}
+
+\newcommand{\Carrera}{\textcolor{text}{\Large INGENIERÍA INFORMÁTICA Y DE SISTEMAS}}
+
+\newcommand{\Nombre}{\textcolor{text}{\Large JHAMSID ROMERO BERNAL}} % Autor
+\newcommand{\email}{\textcolor{text}{\Large jhamsidrbz@gmail.com}} % Correo electrónico
+\newcommand{\fecha}{\textcolor{text}{\Huge \today}} % Año 
+
+\newcommand{\tema}{\textcolor{text}{\huge INFORME DE AYUDANTÍA DE CÁTEDRA}}
+
+\newcommand{\Para}{\textcolor{text}{\Large DENNIS IVÁN CANDIA OVIEDO}}
+\newcommand{\linea}[1][1]{%
+  \textcolor{text}{%
+    \noindent\makebox[\dimexpr#1\linewidth]{\rule{\linewidth}{0.4pt}}%
+  }%
+}
+
+\newcommand{\DePara}{%
+    \textcolor{text}{%
+        \begin{tabular}{@{}ll}%
+            \Large DE: & \Nombre \\  % Puede personalizar dependiendo del caso que requieran
+            & \large Ayudante de cátedra \\ \\
+            \Large PARA: & \Para \\
+            & \large Director del departamento académico
+        \end{tabular}%
+    }%
+}
+
+
+\newcommand{\mysection}[1]{%
+  \begin{tcolorbox}[colback=primary, colframe=primary,
+                    width=.9\paperwidth,
+                    enlarge left by=-1in,  % expande a la izquierda
+                     % expande a la derecha
+                    boxrule=0pt, arc=0pt, outer arc=0pt]
+  \Large\bfseries \textcolor{secundary}{\hspace{10mm}#1}
+  \end{tcolorbox}
+}
+
+\newcommand{\mysubsection}[1]{%
+    \begin{tcolorbox}[colback=primary, colframe=primary,
+                    width=.7\paperwidth,
+                    enlarge left by=-1in,  % expande a la izquierda
+                     % expande a la derecha
+                    boxrule=0pt, arc=0pt, outer arc=0pt,
+                    top=1pt, bottom=1pt]
+  \large\bfseries \textcolor{secundary}{\hspace{10mm}#1}
+  \end{tcolorbox}
+}
+
+
+
+% Fondo solo para la página del título
+\pagecolor{primary}   % color de fondo
+\begin{titlepage}
+    \centering
+    \includegraphics[width = .9\textwidth]{img/logo-unsaac-alt.png}
+    
+    \vspace{1cm}
+    
+    \Facultad
+    
+    \vspace{1cm}
+    
+    \Carrera
+    
+    \vspace{2cm}
+    
+    \linea[1]
+    
+    \vspace{.5cm}
+    
+    \tema
+    
+    \vspace{.5cm}
+    
+    \linea[1]
+    
+    \vspace{2cm}
+    
+    \RaggedRight
+    
+    \DePara
+    
+    \vfill
+    
+    \centering
+
+    \fecha
+
+
+    
+
+\end{titlepage}
+
+
+\newpage
+\nopagecolor          % vuelve al fondo blanco
+
+\mysection{Presentación}
+
+El presente informe da a conocer el avance de las actividades realizadas del estudiante \textbf{Jhamsid Romero Bernal} con código de matrícila \textbf{210412} como ayudante de cátedra de la Escuela Profesional de Ingeniería Informática y de Sistemas
+
+\mysection{Trabajo realizado}
+
+
+\mysubsection{Mes de Agosto}
+
+\begin{itemize}
+    \item Configurar las IPs de las máquinas del laboratorio 306 para su correcto funcionamiento.
+    
+    \item Apoyo en el Centro de Capacitación de Informática para la entrega de certificados.
+    
+    \item Registro de las llaves y controles de los laboratorios que fueron entregados en el mes de Agosto.
+
+    \item Apoyo en la instalación de canaletas en el nuevo cubículo de docentes.
+\end{itemize}
+
+\end{document}
